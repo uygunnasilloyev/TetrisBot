@@ -37,3 +37,6 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+    git add .
+git commit -m "Fix import error with aiogram executor"
+git push origin main
