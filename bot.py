@@ -1,3 +1,4 @@
+
 from aiogram import Bot, Dispatcher, executor, types
 import logging
 
@@ -17,23 +18,4 @@ async def send_file(message: types.Message):
         await bot.send_document(chat_id=message.chat.id, document=doc, caption="Мана файлингиз: Қаршилик.xlsx")
 
 if __name__ == '__main__':
-    executor.start_polling(import asyncio
-from aiogram import Bot, Dispatcher, types
-from aiogram.enums import ParseMode
-from aiogram.types import Message
-
-API_TOKEN = "7965983575:AAEJOYjnCSrrm7O9iN-jE1DFO2hL39cC-jc"
-
-bot = Bot(token=API_TOKEN, parse_mode=ParseMode.HTML)
-dp = Dispatcher()
-
-@dp.message()
-async def echo_handler(message: Message) -> None:
-    await message.answer("Ассалому алайкум! Мен ишлаяпман!")
-
-async def main():
-    await dp.start_polling(bot)
-
-if __name__ == "__main__":
-    asyncio.run(main())
-)
+    executor.start_polling(dp, skip_updates=True)
