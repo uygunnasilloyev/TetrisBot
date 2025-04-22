@@ -1,4 +1,3 @@
-
 from aiogram import Bot, Dispatcher, executor, types
 import logging
 
@@ -18,7 +17,7 @@ async def send_file(message: types.Message):
         await bot.send_document(chat_id=message.chat.id, document=doc, caption="Мана файлингиз: Қаршилик.xlsx")
 
 if __name__ == '__main__':
-    import asyncio
+    executor.start_polling(import asyncio
 from aiogram import Bot, Dispatcher, types
 from aiogram.enums import ParseMode
 from aiogram.types import Message
@@ -37,6 +36,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-    git add .
-git commit -m "Fix import error with aiogram executor"
-git push origin main
+)
